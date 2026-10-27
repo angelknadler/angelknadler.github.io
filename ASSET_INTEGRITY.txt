@@ -1,0 +1,270 @@
+headshot.jpg
+  SOURCE: /mnt/data/1000022965.jpg
+  SOURCE SHA256: 25070e59dd3756c085b3c488eaa559f46a828cf40531ec33e143c3dc59ea26f0
+  SITE   SHA256: 25070e59dd3756c085b3c488eaa559f46a828cf40531ec33e143c3dc59ea26f0
+  MATCH: True
+
+unbound1.png
+  SOURCE: /mnt/data/UnboundBook1(6).png
+  SOURCE SHA256: c40916f284a5174cd5d4044c138c17012b4c330ef8081675efa31be37854a884
+  SITE   SHA256: c40916f284a5174cd5d4044c138c17012b4c330ef8081675efa31be37854a884
+  MATCH: True
+
+unbound2.png
+  SOURCE: /mnt/data/UnboundBook2(5).png
+  SOURCE SHA256: 8c9cc25baaa3aa2bb1bd581720fb06efc99e3ef274232d487e9eec75c637e759
+  SITE   SHA256: 8c9cc25baaa3aa2bb1bd581720fb06efc99e3ef274232d487e9eec75c637e759
+  MATCH: True
+
+unbound3.png
+  SOURCE: /mnt/data/UnboundBook3(2).png
+  SOURCE SHA256: 665eb6de665965d4b07d826efbab0e32ad1d9ca741ac7017a6f963a200fd34eb
+  SITE   SHA256: 665eb6de665965d4b07d826efbab0e32ad1d9ca741ac7017a6f963a200fd34eb
+  MATCH: True
+
+unbound4.png
+  SOURCE: /mnt/data/UnboundBook4(2).png
+  SOURCE SHA256: 36c6990ca468d5e8c454a15fab80de6fd744cdb2ceab4bdb57d947ebf1c6b977
+  SITE   SHA256: 36c6990ca468d5e8c454a15fab80de6fd744cdb2ceab4bdb57d947ebf1c6b977
+  MATCH: True
+
+unbound5.png
+  SOURCE: /mnt/data/UnboundBook5(2).png
+  SOURCE SHA256: 6a0f506967dbc1330d791377e17ef7585b364050afcf573a052dde4c1dd48535
+  SITE   SHA256: 6a0f506967dbc1330d791377e17ef7585b364050afcf573a052dde4c1dd48535
+  MATCH: True
+
+steam.png
+  SOURCE: /mnt/data/STEAMNIGHTHEADER.png
+  SOURCE SHA256: 7a908a2a34f2226b92b02ef2bc3babd65c019f94d58d3cf0ea132ac0f8852b5d
+  SITE   SHA256: 7a908a2a34f2226b92b02ef2bc3babd65c019f94d58d3cf0ea132ac0f8852b5d
+  MATCH: True
+
+halloween.png
+  SOURCE: /mnt/data/1000023090.png
+  SOURCE SHA256: a07310072922fd77e3cbde8313e3ea028c8db32ccee9b324ff41b2d90b7efd91
+  SITE   SHA256: a07310072922fd77e3cbde8313e3ea028c8db32ccee9b324ff41b2d90b7efd91
+  MATCH: True
+
+mission.png
+  SOURCE: /mnt/data/1000023077.png
+  SOURCE SHA256: 7ccc93ab96a37f84cda6c0d6c173a43c1cf82048d812fb675a98d777d256b7de
+  SITE   SHA256: 7ccc93ab96a37f84cda6c0d6c173a43c1cf82048d812fb675a98d777d256b7de
+  MATCH: True
+
+agent.png
+  SOURCE: /mnt/data/1000023079.png
+  SOURCE SHA256: ded0104223ef91a9fb6add8fea5cddc88f83601a4298b625eafa33b6cdfaec5c
+  SITE   SHA256: ded0104223ef91a9fb6add8fea5cddc88f83601a4298b625eafa33b6cdfaec5c
+  MATCH: True
+
+puzzle1.png
+  SOURCE: /mnt/data/1000023092.png
+  SOURCE SHA256: 70e8e917a09aff0126d7736f9d3aa91b0fcc75eb89d5af9ec977f61dc475bec8
+  SITE   SHA256: 70e8e917a09aff0126d7736f9d3aa91b0fcc75eb89d5af9ec977f61dc475bec8
+  MATCH: True
+
+puzzle2.png
+  SOURCE: /mnt/data/1000023091.png
+  SOURCE SHA256: 408eed3c96a28dfe45f879374e0f04dd4ca762300c61e9af7201834c420df5ac
+  SITE   SHA256: 408eed3c96a28dfe45f879374e0f04dd4ca762300c61e9af7201834c420df5ac
+  MATCH: True
+
+house_cover.jpg
+  SOURCE: /mnt/data/1000023045.jpg
+  SOURCE SHA256: 267d8bc3c76139ffe1a04c8b7c8c14bbc63a2c2e9f7f1a642ac471fc0e1fe8c9
+  SITE   SHA256: 267d8bc3c76139ffe1a04c8b7c8c14bbc63a2c2e9f7f1a642ac471fc0e1fe8c9
+  MATCH: True
+
+house_red.jpg
+  SOURCE: /mnt/data/1000023036.jpg
+  SOURCE SHA256: fe9b017dc8f369f9ecea25bf05bfd87bf45474618b673add469828bbaa651d83
+  SITE   SHA256: fe9b017dc8f369f9ecea25bf05bfd87bf45474618b673add469828bbaa651d83
+  MATCH: True
+
+house_blue.jpg
+  SOURCE: /mnt/data/1000023037.jpg
+  SOURCE SHA256: cd2804d62a1bf5580d66d5a9777989e85902191a9a9b9adc2694c5b1cc00a49c
+  SITE   SHA256: cd2804d62a1bf5580d66d5a9777989e85902191a9a9b9adc2694c5b1cc00a49c
+  MATCH: True
+
+house_green.jpg
+  SOURCE: /mnt/data/1000023038.jpg
+  SOURCE SHA256: 12851cbc671a199f960183321b1fb46077e05b02b56f35e9288556083bd93a5f
+  SITE   SHA256: 12851cbc671a199f960183321b1fb46077e05b02b56f35e9288556083bd93a5f
+  MATCH: True
+
+house_gold.jpg
+  SOURCE: /mnt/data/1000023039.jpg
+  SOURCE SHA256: ab98eb503b1ecc586a91110812102df2dec7e2c64631239fc7edf480c37d89d2
+  SITE   SHA256: ab98eb503b1ecc586a91110812102df2dec7e2c64631239fc7edf480c37d89d2
+  MATCH: True
+
+dream.jpg
+  SOURCE: /mnt/data/1000023046.jpg
+  SOURCE SHA256: 45e68ee20280b504e97c57cedfec60abfc6815e622e4288554839d4414acdb8a
+  SITE   SHA256: 45e68ee20280b504e97c57cedfec60abfc6815e622e4288554839d4414acdb8a
+  MATCH: True
+
+core_cards.jpg
+  SOURCE: /mnt/data/1000023055.jpg
+  SOURCE SHA256: 745d58c9c450e4efb36302a761b9a9a32fe1e55b79708df10b8fc85b8eb89ff7
+  SITE   SHA256: 745d58c9c450e4efb36302a761b9a9a32fe1e55b79708df10b8fc85b8eb89ff7
+  MATCH: True
+
+hikari.jpg
+  SOURCE: /mnt/data/1000023060.jpg
+  SOURCE SHA256: 78576f68bb5715aad5e75720370233235e57f3a81607fed619f4ebd96c80cab4
+  SITE   SHA256: 78576f68bb5715aad5e75720370233235e57f3a81607fed619f4ebd96c80cab4
+  MATCH: True
+
+fox_merch.jpg
+  SOURCE: /mnt/data/1000023065.jpg
+  SOURCE SHA256: 8a83d8dccfc30cb2b87d9b2a39188f1f60ecc97da2f450c1893f2b7f7db25df7
+  SITE   SHA256: 8a83d8dccfc30cb2b87d9b2a39188f1f60ecc97da2f450c1893f2b7f7db25df7
+  MATCH: True
+
+fox.jpg
+  SOURCE: /mnt/data/1000023052.jpg
+  SOURCE SHA256: 495bd460dac49e753f1c1727372db8d2375b4221c7dce1f43a5bebe5a2458f71
+  SITE   SHA256: 495bd460dac49e753f1c1727372db8d2375b4221c7dce1f43a5bebe5a2458f71
+  MATCH: True
+
+design_culture.jpg
+  SOURCE: /mnt/data/1000023062.jpg
+  SOURCE SHA256: d6d279c7a4d2f7384fd7af2ed63b4aac3f84c2903e8212da1882b600f5828365
+  SITE   SHA256: d6d279c7a4d2f7384fd7af2ed63b4aac3f84c2903e8212da1882b600f5828365
+  MATCH: True
+
+dragonfruit.jpg
+  SOURCE: /mnt/data/1000023063.jpg
+  SOURCE SHA256: 29cb32f47658e5b7d7be4c95a18697a31f5bb3578a9026c34244a51d59d0ff11
+  SITE   SHA256: 29cb32f47658e5b7d7be4c95a18697a31f5bb3578a9026c34244a51d59d0ff11
+  MATCH: True
+
+cupcake_type.jpg
+  SOURCE: /mnt/data/1000023066.jpg
+  SOURCE SHA256: ab61a6c1e2f5988eb2f46cf8eb1bacc0387cbc8174c55ad83e125e483df9788d
+  SITE   SHA256: ab61a6c1e2f5988eb2f46cf8eb1bacc0387cbc8174c55ad83e125e483df9788d
+  MATCH: True
+
+wolf.jpg
+  SOURCE: /mnt/data/Minimalist Wolf Paw Print Chapter Endcap.jpg
+  SOURCE SHA256: 726cd43d6afc2c13355d37c83d6a42b02d1c5a418bb8e86a8821614f8e0bc23d
+  SITE   SHA256: 726cd43d6afc2c13355d37c83d6a42b02d1c5a418bb8e86a8821614f8e0bc23d
+  MATCH: True
+
+core_logo.png
+  SOURCE: /mnt/data/Core Expressions Shop LOGO.png
+  SOURCE SHA256: b38f3c9165b5b0afe5e87c94f685766cb9dfd704129ac5a2e93289dbf424f9a7
+  SITE   SHA256: b38f3c9165b5b0afe5e87c94f685766cb9dfd704129ac5a2e93289dbf424f9a7
+  MATCH: True
+
+
+VIDEO SOURCE
+  SOURCE: /mnt/data/My Stop Motion Movie(6).mp4
+  SOURCE SHA256: d673e27dec5bfa884d69c5f3ac17f336ddd0536eb84566f01a93fa07c3cc135e
+  SOURCE FILE LEFT UNCHANGED: True
+
+WEB PLAYBACK COPY
+  FILE: assets/stop_motion_web_preview.mp4
+  SHA256: 71fec29ed481cbf966ef81c72a46b46c2afe06096374b4d6633960c62a0d5de8
+  NOTE: Same complete visual sequence, web-compressed only for practical in-page playback.
+
+VIDEO STILLS
+  NOTE: Filmstrip JPGs are direct frame extractions from the uploaded source video; no creative alterations were applied.
+
+
+V6 CODE NINJAS CURRENT-TURN ASSETS — BYTE-FOR-BYTE COPIES
+
+cn_parents_night_out.png
+  SOURCE: /mnt/data/Flyer.png
+  SOURCE SHA256: a19b22284b9646afc4b931bd1c96452b7a11048a98df30bb36e71bbf9ef73382
+  SITE SHA256:   a19b22284b9646afc4b931bd1c96452b7a11048a98df30bb36e71bbf9ef73382
+  MATCH: True
+
+cn_halloween_goodie_bags.png
+  SOURCE: /mnt/data/SCHOOLs, PTAs, & PTOs.png
+  SOURCE SHA256: 1837214eefc2139ec38d9065c9e864c937c859de731ed8351f7e2051043d7c3c
+  SITE SHA256:   1837214eefc2139ec38d9065c9e864c937c859de731ed8351f7e2051043d7c3c
+  MATCH: True
+
+cn_game_directions.png
+  SOURCE: /mnt/data/BACK - Directions.png
+  SOURCE SHA256: 2a197d9bc478c14d5c83f6a850a8e03203b848a881e6b5dc8c30d8d79e9db843
+  SITE SHA256:   2a197d9bc478c14d5c83f6a850a8e03203b848a881e6b5dc8c30d8d79e9db843
+  MATCH: True
+
+cn_game_front.png
+  SOURCE: /mnt/data/FRONT.png
+  SOURCE SHA256: e7aa3fec30265bf0df4742f89f2ba83c581ba5b373b8d2c9e13044234129c4d0
+  SITE SHA256:   e7aa3fec30265bf0df4742f89f2ba83c581ba5b373b8d2c9e13044234129c4d0
+  MATCH: True
+
+cn_game_sticker_cover.png
+  SOURCE: /mnt/data/One Sticker Cover.png
+  SOURCE SHA256: 3c56c48cad7169dca9055fa3e27b6f71bde137b3e99698721f9c5a077452bd30
+  SITE SHA256:   3c56c48cad7169dca9055fa3e27b6f71bde137b3e99698721f9c5a077452bd30
+  MATCH: True
+
+cn_black_friday.png
+  SOURCE: /mnt/data/BLACK FRIDAY SALE.png
+  SOURCE SHA256: e7861158ff90d1a49bdd2b73c57e88e73bf80cbdf43d8ecdaf48f2090ba47fe7
+  SITE SHA256:   e7861158ff90d1a49bdd2b73c57e88e73bf80cbdf43d8ecdaf48f2090ba47fe7
+  MATCH: True
+
+cn_holiday_sale.png
+  SOURCE: /mnt/data/HOLIDAY SALE.png
+  SOURCE SHA256: 5b892bab9e6224820d7ea4676963cc290b14fc0f3dca692b82b7d3109cd46883
+  SITE SHA256:   5b892bab9e6224820d7ea4676963cc290b14fc0f3dca692b82b7d3109cd46883
+  MATCH: True
+
+cn_winter_break.png
+  SOURCE: /mnt/data/Christmas_New Years.png
+  SOURCE SHA256: f50543195fe4ef8204124531d377c005b240fe8c46f2577e5b3317bbef819b60
+  SITE SHA256:   f50543195fe4ef8204124531d377c005b240fe8c46f2577e5b3317bbef819b60
+  MATCH: True
+
+cn_halloween_closure.png
+  SOURCE: /mnt/data/Halloween.png
+  SOURCE SHA256: a17e688b33e887039df73eb96556cd984c5a485111a9cfc5d37da6e2fcd40ad0
+  SITE SHA256:   a17e688b33e887039df73eb96556cd984c5a485111a9cfc5d37da6e2fcd40ad0
+  MATCH: True
+
+cn_thanksgiving_closure.png
+  SOURCE: /mnt/data/Thanksgiving.png
+  SOURCE SHA256: 97c42749cfae51ec2f2ca113c2bf414fca0b00a64ba4173da5d02bbdd94b242e
+  SITE SHA256:   97c42749cfae51ec2f2ca113c2bf414fca0b00a64ba4173da5d02bbdd94b242e
+  MATCH: True
+
+
+V9 ORIGINAL VIDEO ASSET VERIFICATION
+
+SOURCE: My Stop Motion Movie(6).mp4
+SOURCE SHA256: d673e27dec5bfa884d69c5f3ac17f336ddd0536eb84566f01a93fa07c3cc135e
+SITE COPY: assets/stop_motion_original.mp4
+SITE COPY SHA256: d673e27dec5bfa884d69c5f3ac17f336ddd0536eb84566f01a93fa07c3cc135e
+BYTE-FOR-BYTE MATCH: True
+
+SOURCE: Intro - Sequence 01 1.mp4
+SOURCE SHA256: f28e577d9f98453dbae3e54b97d4207889e95b6e95b13d596eacd0b2087b1cd3
+SITE COPY: assets/intro_sequence_original.mp4
+SITE COPY SHA256: f28e577d9f98453dbae3e54b97d4207889e95b6e95b13d596eacd0b2087b1cd3
+BYTE-FOR-BYTE MATCH: True
+
+SOURCE: Outro - Sequence 01 1.mp4
+SOURCE SHA256: a90a6b30ae0a21198008c4d9ef20732f125f1aaf3a47d9d7c0555a21c2b7d061
+SITE COPY: assets/outro_sequence_original.mp4
+SITE COPY SHA256: a90a6b30ae0a21198008c4d9ef20732f125f1aaf3a47d9d7c0555a21c2b7d061
+BYTE-FOR-BYTE MATCH: True
+
+SOURCE: AI Comic Video.mp4
+SOURCE SHA256: 9a17eedc6e9d595f84d64fdbb67fdf4d7deb6661722bfeb9a4b3ebfdcca2abaf
+SITE COPY: assets/ai_comic_video_original.mp4
+SITE COPY SHA256: 9a17eedc6e9d595f84d64fdbb67fdf4d7deb6661722bfeb9a4b3ebfdcca2abaf
+BYTE-FOR-BYTE MATCH: True
+
+Poster JPGs are direct frame extractions for display only; the playable MP4s above are untouched byte-for-byte copies of the user uploads.
+
+
+V10 NOTE: Stop-motion assets were intentionally removed from the portfolio package at the user's request.
