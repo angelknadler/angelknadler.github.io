@@ -1,0 +1,24 @@
+GITHUB PAGES FIX - ANGEL KNADLER PORTFOLIO
+
+This folder is ready to upload to your angelknadler.github.io repository.
+
+IMPORTANT:
+Upload the CONTENTS of this folder, not the ZIP file itself.
+
+Your GitHub repository root should contain:
+- index.html
+- assets/   <-- this folder must be present
+- README.txt
+- ASSET_INTEGRITY.txt
+
+To fix the existing site:
+1. Open your angelknadler.github.io repository on GitHub.
+2. Delete/replace the old index.html if needed.
+3. Click Add file > Upload files.
+4. Drag index.html AND the entire assets folder into the upload area.
+5. Commit the changes.
+6. Wait a few minutes, then hard-refresh https://angelknadler.github.io/
+   Windows: Ctrl + F5
+   Mac: Cmd + Shift + R
+
+Do not rename anything inside assets. GitHub Pages filenames are case-sensitive.

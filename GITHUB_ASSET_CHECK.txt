@@ -1,0 +1,7 @@
+ANGEL KNADLER PORTFOLIO - ASSET VERIFICATION
+
+HTML media references checked: 40
+Missing referenced files: 0
+Missing source uploads: 0
+
+PASS: Every local image/video/poster referenced by index.html exists in this package.
