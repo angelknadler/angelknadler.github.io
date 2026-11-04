@@ -67,7 +67,50 @@
 .sound-note{ margin-top:14px; font-size:11px; color:#77777e; letter-spacing:.10em; text-transform:uppercase;
 }
 @media(max-width:900px){ .video-feature{grid-template-columns:1fr} .video-grid{grid-template-columns:1fr} .video-player video{min-height:260px} .video-card video{max-height:72vh}
-} </style></head><body>
+} 
+/* Seasonal row: four across */
+.cn-grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px;align-items:start}
+@media(max-width:1000px){.cn-grid4{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.cn-grid4{grid-template-columns:1fr}}
+
+/* ===== Holiday Arcade cabinets ===== */
+.arcade-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 28px;align-items:start;margin-top:8px}
+.cabinet{--accent:#8f52ff;--glow:143,82,255;position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg,#17171d,#0a0a0d 62%);border:1px solid #2a2a32;border-radius:20px 20px 6px 6px;padding:14px 14px 0;box-shadow:0 34px 64px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.07)}
+.cabinet:before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 0 0 70px rgba(var(--glow),.12)}
+.cab-marquee{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:112px;text-align:center;padding:12px 10px;margin-bottom:12px;border-radius:10px;background:#050507;border:1px solid rgba(var(--glow),.6);box-shadow:0 0 24px rgba(var(--glow),.3),inset 0 0 24px rgba(var(--glow),.16)}
+.cab-holiday{display:block;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:7px}
+.cab-marquee h4{margin:0;font:clamp(20px,1.9vw,27px)/1.02 Impact,'Arial Black',sans-serif;text-transform:uppercase;letter-spacing:.01em;color:#f3f3f5;text-shadow:0 0 14px rgba(var(--glow),.55);text-wrap:balance}
+.cab-bezel{background:#000;border-radius:10px;padding:12px;border:1px solid #23232a;box-shadow:inset 0 0 0 3px #101013,inset 0 6px 18px rgba(0,0,0,.9)}
+.cab-screen{position:relative;aspect-ratio:4/3;background:#04040a;overflow:hidden;border-radius:4px}
+.cabinet[data-mode="code"] .cab-screen{aspect-ratio:3/4}
+.cab-screen:fullscreen{aspect-ratio:auto;border-radius:0}
+.cab-screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.cabinet:not([data-mode="attract"]) .cab-attract{display:none}
+.cab-attract{appearance:none;position:absolute;inset:0;width:100%;height:100%;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:16px;color:inherit;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 50% 38%,rgba(var(--glow),.32),transparent 62%),repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 2px,transparent 2px 4px),#06060b}
+.cab-attract:hover .cab-glyph{transform:scale(1.08)}
+.cab-attract:focus-visible,.cab-btn:focus-visible{outline:2px solid var(--turq);outline-offset:2px}
+.cab-glyph{font-size:clamp(46px,5vw,70px);line-height:1;filter:drop-shadow(0 0 18px rgba(var(--glow),.85));transition:transform .2s}
+.cab-blurb{font-size:12px;line-height:1.5;color:#b8b8be;max-width:32ch}
+.cab-insert{font:15px Impact,'Arial Black',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);animation:cabBlink 1.3s steps(2,start) infinite}
+@keyframes cabBlink{to{visibility:hidden}}
+@media(prefers-reduced-motion:reduce){.cab-insert{animation:none}.cab-glyph{transition:none}}
+.cab-panel{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;margin:12px -14px 0;padding:16px;background:linear-gradient(180deg,#1f1f27,#121217);border-top:1px solid #353540}
+.cab-stick{position:relative;width:58px;height:58px;border-radius:50%;background:radial-gradient(circle,#050507 0 36%,#1b1b21 38% 100%);border:1px solid #2d2d36}
+.cab-stick:before{content:"";position:absolute;left:50%;top:15px;width:6px;height:24px;margin-left:-3px;border-radius:3px;background:linear-gradient(90deg,#6c6c74,#e4e4e8,#6c6c74)}
+.cab-stick:after{content:"";position:absolute;left:50%;top:3px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:radial-gradient(circle at 36% 32%,#fff 0 8%,var(--accent) 32%,#000 135%);box-shadow:0 3px 8px rgba(0,0,0,.65),0 0 14px rgba(var(--glow),.5)}
+.cab-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cab-btn{appearance:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;min-height:42px;padding:8px 8px;font:700 10px Arial,Helvetica,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;white-space:nowrap;color:#dcdce1;background:linear-gradient(180deg,#2a2a33,#1a1a20);border:1px solid #3a3a45;border-radius:999px;box-shadow:0 3px 0 #08080a,inset 0 1px 0 rgba(255,255,255,.08);transition:transform .08s,box-shadow .08s,border-color .15s}
+.cab-btn:hover{border-color:var(--accent)}
+.cab-btn:active{transform:translateY(2px);box-shadow:0 1px 0 #08080a}
+.cab-btn[aria-pressed="true"]{color:#06060a;background:var(--accent);border-color:var(--accent);box-shadow:0 3px 0 rgba(0,0,0,.6),0 0 16px rgba(var(--glow),.5)}
+.cab-kick{margin:0 -14px;padding:11px 14px;text-align:center;background:linear-gradient(180deg,#0b0b0e,#050507);border-top:1px solid #1d1d22}
+.cab-hint{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#80808a}
+.arcade-note{margin-top:34px;color:#6f6f76;font-size:12px;line-height:1.6;max-width:860px}
+.arcade-note a{color:var(--turq)}
+@media(max-width:1100px){.arcade-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.arcade-row{grid-template-columns:1fr}}
+@media(max-width:420px){.cab-panel{grid-template-columns:1fr}.cab-stick{display:none}}
+</style></head><body>
 <header class="hero grain"><div class="wrap hero-inner"><div class="hero-ref"><div class="subtle-rule"></div><div class="gd-label">Graphic <span>Design</span></div><div class="portfolio-line"><span class="metal light">P</span><span class="metal">ortf</span><span class="orb-wrap"><span class="orb"></span></span><span class="metal light">lio</span></div><div class="hero-signature">Angel Knadler</div></div><div class="hero-bottom"><span>Graphic Designer</span><span>Branding · Publishing · Marketing · Illustration · Video Editing</span></div></div></header>
 <div class="marquee"><div>BRANDING ✦ PUBLISHING ✦ MARKETING ✦ <b>GRAPHIC DESIGN</b> ✦ ILLUSTRATION ✦ EDITORIAL ✦ BRANDING ✦ PUBLISHING ✦</div></div>
 <section class="section grain"><div class="wrap"><div class="section-head"><div class="num">01</div><div><div class="eyebrow">Hello, I'm Angel</div><h2>Designer <em>Behind</em> The Work</h2></div></div><div class="about"><div class="about-image"><img src="/headshot.jpg" alt="Angel Knadler"></div><div><div class="hello">Hi! <span>I'm</span><br>Angel.</div><p>Graphic designer with experience across visual identity, publishing, editorial design, youth and community marketing, educational experiences, digital content, illustration, and multimedia. I build cohesive visual systems that can move from screen to print to real-world use.</p><div class="stats"><div class="stat"><b>15+</b><span>Years in design</span></div><div class="stat"><b>6+</b><span>Creative disciplines</span></div><div class="stat"><b>360°</b><span>Print + digital thinking</span></div></div></div></div></div></section>
@@ -80,7 +123,7 @@
 <div class="book-wrap"><img src="/unbound5.png" alt="Unbound The Primal Dawn full cover"><div class="book-meta"><span>Book 5 · The Primal Dawn</span></div></div></div></section>
 <section class="breaker grain"><div class="wrap"><small>Current Professional Work</small><h2>Marketing <span>& Experience</span></h2></div></section>
 <section class="section"><div class="wrap">
-<article class="project cn-case"> <div class="project-title"> <div><div class="tag">03 / Current Professional Work</div><h3>Code Ninjas Marketing & Campaign Design</h3></div> <p>A selection of promotional, seasonal, event, and interactive design created for Code Ninjas Harrisburg–Mechanicsburg, combining energetic layouts, youth-focused visuals, bold calls to action, and brand-consistent design across print and digital campaigns.</p> </div> <div class="cn-hero-grid"> <div class="cn-piece"><img src="/cn_parents_night_out.png" alt="Code Ninjas Parents' Night Out flyer"><div class="cn-label"><span>Parents' Night Out</span><span>Event Promotion</span></div></div> <div class="cn-stack"> <div class="cn-piece"><img src="/cn_halloween_goodie_bags.png" alt="Code Ninjas Halloween Goodie Bags"><div class="cn-label"><span>Halloween Goodie Bags</span><span>Community Outreach</span></div></div> <div class="cn-piece"><img src="/cn_black_friday.png" alt="Code Ninjas Black Friday campaign"><div class="cn-label"><span>Black Friday</span><span>Seasonal Sales</span></div></div> </div> </div> <div class="cn-copy"><div><strong>Design Range</strong>Event promotions, family programming, community outreach, seasonal campaigns, closures, printed/game materials, and interactive experiences.</div><div><strong>Visual Adaptability</strong>The work intentionally shifts tone by audience and occasion while preserving Code Ninjas recognition through logo, ninja characters, gaming cues, and energetic layouts.</div></div> <div class="cn-subhead">Seasonal Promotions & Operations</div> <div class="cn-grid3"> <div class="cn-piece"><img src="/cn_holiday_sale.png" alt="Holiday Sale campaign"><div class="cn-label"><span>Holiday Sale</span><span>Promotion</span></div></div> <div class="cn-piece"><img src="/cn_thanksgiving_closure.png" alt="Thanksgiving closure notice"><div class="cn-label"><span>Thanksgiving</span><span>Closure Notice</span></div></div> <div class="cn-piece"><img src="/cn_halloween_closure.png" alt="Halloween closure notice"><div class="cn-label"><span>Halloween</span><span>Closure Notice</span></div></div> </div> <div class="cn-grid2"> <div class="cn-piece"><img src="/cn_winter_break.png" alt="Winter Break closure notice"><div class="cn-label"><span>Winter Break</span><span>Closure Notice</span></div></div> <div class="cn-piece"><img src="/cn_halloween_goodie_bags.png" alt="Halloween Goodie Bags outreach"><div class="cn-label"><span>Schools / PTAs / PTOs</span><span>Outreach Campaign</span></div></div> </div> <div class="cn-subhead">Interactive Game Building Materials</div> <div class="cn-grid3"> <div class="cn-piece"><img src="/cn_game_sticker_cover.png" alt="Game Building sticker cover"><div class="cn-label"><span>Game Building</span><span>Sticker Cover</span></div></div> <div class="cn-piece"><img src="/cn_game_front.png" alt="Game Building front"><div class="cn-label"><span>Game Building</span><span>Front</span></div></div> <div class="cn-piece"><img src="/cn_game_directions.png" alt="Game Building directions"><div class="cn-label"><span>Game Building</span><span>Directions</span></div></div> </div>
+<article class="project cn-case"> <div class="project-title"> <div><div class="tag">03 / Current Professional Work</div><h3>Code Ninjas Marketing & Campaign Design</h3></div> <p>A selection of promotional, seasonal, event, and interactive design created for Code Ninjas Harrisburg–Mechanicsburg, combining energetic layouts, youth-focused visuals, bold calls to action, and brand-consistent design across print and digital campaigns.</p> </div> <div class="cn-hero-grid"> <div class="cn-piece"><img src="/cn_parents_night_out.png" alt="Code Ninjas Parents' Night Out flyer"><div class="cn-label"><span>Parents' Night Out</span><span>Event Promotion</span></div></div> <div class="cn-stack"> <div class="cn-piece"><img src="/cn_halloween_goodie_bags.png" alt="Code Ninjas Halloween Goodie Bags"><div class="cn-label"><span>Halloween Goodie Bags</span><span>Community Outreach</span></div></div> <div class="cn-piece"><img src="/cn_black_friday.png" alt="Code Ninjas Black Friday campaign"><div class="cn-label"><span>Black Friday</span><span>Seasonal Sales</span></div></div> </div> </div> <div class="cn-copy"><div><strong>Design Range</strong>Event promotions, family programming, community outreach, seasonal campaigns, closures, printed/game materials, and interactive experiences.</div><div><strong>Visual Adaptability</strong>The work intentionally shifts tone by audience and occasion while preserving Code Ninjas recognition through logo, ninja characters, gaming cues, and energetic layouts.</div></div> <div class="cn-subhead">Seasonal Promotions & Operations</div> <div class="cn-grid4"> <div class="cn-piece"><img src="/cn_holiday_sale.png" alt="Holiday Sale campaign"><div class="cn-label"><span>Holiday Sale</span><span>Promotion</span></div></div> <div class="cn-piece"><img src="/cn_thanksgiving_closure.png" alt="Thanksgiving closure notice"><div class="cn-label"><span>Thanksgiving</span><span>Closure Notice</span></div></div> <div class="cn-piece"><img src="/cn_halloween_closure.png" alt="Halloween closure notice"><div class="cn-label"><span>Halloween</span><span>Closure Notice</span></div></div> <div class="cn-piece"><img src="/cn_winter_break.png" alt="Winter Break closure notice"><div class="cn-label"><span>Winter Break</span><span>Closure Notice</span></div></div> </div> <div class="cn-subhead">Interactive Game Building Materials</div> <div class="cn-grid3"> <div class="cn-piece"><img src="/cn_game_sticker_cover.png" alt="Game Building sticker cover"><div class="cn-label"><span>Game Building</span><span>Sticker Cover</span></div></div> <div class="cn-piece"><img src="/cn_game_front.png" alt="Game Building front"><div class="cn-label"><span>Game Building</span><span>Front</span></div></div> <div class="cn-piece"><img src="/cn_game_directions.png" alt="Game Building directions"><div class="cn-label"><span>Game Building</span><span>Directions</span></div></div> </div>
 </article> <article class="project"><div class="project-title"><div><div class="tag">04 / Community Event Design</div><h3>Planet Highland STEAM Night</h3></div><p>Event identity and promotional design for a community-wide, space-themed STEAM night.</p></div><div class="frame"><img src="/steam.png" alt="Planet Highland STEAM Night"></div></article> <article class="project"><div class="project-title"><div><div class="tag">05 / Experience Design</div><h3>Mission Impossible: Crack the Code</h3></div><p>A secret-agent educational experience built as a consistent visual system across briefings and code puzzles.</p></div><div class="split"><div class="frame"><img src="/mission.png" alt="Mission briefing"></div><div class="frame"><img src="/agent.png" alt="Agent briefing"></div></div><div class="grid2"><div class="frame"><img src="/puzzle1.png" alt="Number code puzzle"></div><div class="frame"><img src="/puzzle2.png" alt="Symbol code puzzle"></div></div></article> <article class="project motion-project"> <div class="project-title"> <div> <div class="tag">06 / Video Editing & Motion</div> <h3>Video Editing</h3> </div> <p>Selected motion work showing short-form editing, opening and closing sequences, audio, timing, and multimedia storytelling.</p> </div> <div class="video-grid"> <div class="video-card"> <video controls preload="metadata" playsinline poster="/intro_poster.jpg"> <source src="/intro_sequence_original.mp4" type="video/mp4"> Your browser does not support embedded video. </video> <div class="video-card-copy"> <div class="vtype">Intro Sequence</div> <h5>Intro Edit</h5> <p>Opening sequence designed around pacing, timing, transitions, and sound to create an engaging introduction.</p> </div> </div> <div class="video-card"> <video controls preload="metadata" playsinline poster="/outro_poster.jpg"> <source src="/outro_sequence_original.mp4" type="video/mp4"> Your browser does not support embedded video. </video> <div class="video-card-copy"> <div class="vtype">Outro Sequence</div> <h5>Outro Edit</h5> <p>Closing sequence highlighting visual pacing, timing, and audio as part of the finished edit.</p> </div> </div> <div class="video-card"> <video controls preload="metadata" playsinline poster="/ai_comic_poster.jpg"> <source src="/ai_comic_video_original.mp4" type="video/mp4"> Your browser does not support embedded video. </video> <div class="video-card-copy"> <div class="vtype">Multimedia / AI Comic</div> <h5>AI Comic Video</h5> <p>Vertical multimedia video demonstrating short-form visual storytelling and editing.</p> </div> </div> </div>
 </article> <article class="project"><div class="project-title"><div><div class="tag">07 / Editorial & Publishing</div><h3>The House of Souls</h3></div><p>Cover and interior editorial system using atmospheric imagery, section-specific color, and classic typography.</p></div><div class="frame"><img src="/house_cover.jpg" alt="The House of Souls cover"></div><div class="grid2"><div class="frame"><img src="/house_red.jpg" alt="House of Souls red spread"></div><div class="frame"><img src="/house_blue.jpg" alt="House of Souls blue spread"></div></div><div class="grid2"><div class="frame"><img src="/house_green.jpg" alt="House of Souls green spread"></div><div class="frame"><img src="/house_gold.jpg" alt="House of Souls gold spread"></div></div></article>
 <article class="project"><div class="project-title"><div><div class="tag">08 / Identity Design</div><h3>Brand Systems</h3></div><p>Selected identity and collateral work across media, creative services, and food branding.</p></div><div class="grid2"><div class="frame"><img src="/dream.jpg" alt="Dream in Motion Media"></div><div class="frame"><img src="/core_cards.jpg" alt="Core Expressions printed collateral"></div></div><div class="frame" style="margin-top:12px"><img src="/hikari.jpg" alt="Hikari Radiant Cupcakes"></div></article>
@@ -88,6 +131,103 @@
 <article class="project"><div class="project-title"><div><div class="tag">10 / Text & Font Design</div><h3>Typography & Lettering</h3></div><p>Custom letterform exploration focused on playful shape language, consistent character construction, readability, and a distinctive visual personality across a complete alphabet system.</p></div><div class="frame"><img src="/cupcake_type.jpg" alt="Cupcake Bazinga custom font design"></div><div class="caption"><div><strong>Design Focus</strong><br>Custom lettering, alphabet construction, visual consistency, character rhythm, and expressive typography.</div><div><strong>Project</strong><br>Cupcake Bazinga — a playful display alphabet developed as a complete typographic design system.</div></div></article>
 <article class="project"><div class="project-title"><div><div class="tag">11 / Print Exploration</div><h3>Poster & Illustration</h3></div><p>Selected expressive typography, poster composition, and editorial illustration.</p></div><div class="grid2"><div class="frame"><img src="/design_culture.jpg" alt="Design Culture Now poster"></div><div class="frame"><img src="/dragonfruit.jpg" alt="Dragon fruit editorial"></div></div></article>
 </div></section>
+<section class="breaker grain"><div class="wrap"><small>Interactive Work</small><h2>Holiday <span>Arcade</span></h2></div></section>
+<section class="section" id="arcade"><div class="wrap">
+<article class="project">
+<div class="project-title"><div><div class="tag">12 / Game Development</div><h3>Six Holidays, Six Cabinets</h3></div><p>Original games I built in Microsoft MakeCode Arcade, one for each major U.S. holiday. Insert a coin to play right here, or flip a cabinet to Code and read how it was made.</p></div>
+<div class="arcade-row">
+
+<article class="cabinet" data-id="S66986-30628-77192-80752" data-title="Midnight at the Haunted Graveyard" data-mode="attract" style="--accent:#ff7a1a;--glow:255,122,26">
+<header class="cab-marquee"><span class="cab-holiday">Halloween</span><h4>Midnight at the Haunted Graveyard</h4></header>
+<div class="cab-bezel"><div class="cab-screen"><button type="button" class="cab-attract" data-act="play" aria-label="Play Midnight at the Haunted Graveyard"><span class="cab-glyph" aria-hidden="true">🎃</span><span class="cab-blurb">Collect candy and dodge ghosts and bats in a haunted graveyard after midnight.</span><span class="cab-insert">▶ Insert coin</span></button></div></div>
+<div class="cab-panel"><div class="cab-stick" aria-hidden="true"></div><div class="cab-btns"><button type="button" class="cab-btn" data-act="play" aria-pressed="false">▶ Play</button><button type="button" class="cab-btn" data-act="code" aria-pressed="false">&lt;/&gt; Code</button><button type="button" class="cab-btn" data-act="full">⛶ Full</button><a class="cab-btn" href="https://arcade.makecode.com/S66986-30628-77192-80752" target="_blank" rel="noopener">↗ MakeCode</a></div></div>
+<div class="cab-kick"><span class="cab-hint">Click the screen · Arrows + Z / X</span></div>
+</article>
+
+<article class="cabinet" data-id="S00396-84900-72669-71688" data-title="Pie Dash" data-mode="attract" style="--accent:#f2b134;--glow:242,177,52">
+<header class="cab-marquee"><span class="cab-holiday">Thanksgiving</span><h4>Pie Dash</h4></header>
+<div class="cab-bezel"><div class="cab-screen"><button type="button" class="cab-attract" data-act="play" aria-label="Play Pie Dash"><span class="cab-glyph" aria-hidden="true">🥧</span><span class="cab-blurb">A Thanksgiving delivery run: run, jump, and flap through 50 levels to get a pumpkin pie to the dinner table.</span><span class="cab-insert">▶ Insert coin</span></button></div></div>
+<div class="cab-panel"><div class="cab-stick" aria-hidden="true"></div><div class="cab-btns"><button type="button" class="cab-btn" data-act="play" aria-pressed="false">▶ Play</button><button type="button" class="cab-btn" data-act="code" aria-pressed="false">&lt;/&gt; Code</button><button type="button" class="cab-btn" data-act="full">⛶ Full</button><a class="cab-btn" href="https://arcade.makecode.com/S00396-84900-72669-71688" target="_blank" rel="noopener">↗ MakeCode</a></div></div>
+<div class="cab-kick"><span class="cab-hint">Click the screen · Arrows + Z / X</span></div>
+</article>
+
+<article class="cabinet" data-id="S47776-62563-82034-83096" data-title="Yeti's Sled Dash" data-mode="attract" style="--accent:#5cc8ff;--glow:92,200,255">
+<header class="cab-marquee"><span class="cab-holiday">Winter Holiday</span><h4>Yeti's Sled Dash</h4></header>
+<div class="cab-bezel"><div class="cab-screen"><button type="button" class="cab-attract" data-act="play" aria-label="Play Yeti's Sled Dash"><span class="cab-glyph" aria-hidden="true">🛷</span><span class="cab-blurb">Steer a yeti down a snowy mountain, catch hot cocoa, and dodge snowmen and ice patches.</span><span class="cab-insert">▶ Insert coin</span></button></div></div>
+<div class="cab-panel"><div class="cab-stick" aria-hidden="true"></div><div class="cab-btns"><button type="button" class="cab-btn" data-act="play" aria-pressed="false">▶ Play</button><button type="button" class="cab-btn" data-act="code" aria-pressed="false">&lt;/&gt; Code</button><button type="button" class="cab-btn" data-act="full">⛶ Full</button><a class="cab-btn" href="https://arcade.makecode.com/S47776-62563-82034-83096" target="_blank" rel="noopener">↗ MakeCode</a></div></div>
+<div class="cab-kick"><span class="cab-hint">Click the screen · Arrows + Z / X</span></div>
+</article>
+
+<article class="cabinet" data-id="S32183-06852-86178-84168" data-title="Cupid's Heart Rush" data-mode="attract" style="--accent:#ff5c9a;--glow:255,92,154">
+<header class="cab-marquee"><span class="cab-holiday">Valentine's Day</span><h4>Cupid's Heart Rush</h4></header>
+<div class="cab-bezel"><div class="cab-screen"><button type="button" class="cab-attract" data-act="play" aria-label="Play Cupid's Heart Rush"><span class="cab-glyph" aria-hidden="true">💘</span><span class="cab-blurb">Fly as Cupid through 50 levels of falling hearts. Catch them and shoot arrows to mend the broken ones.</span><span class="cab-insert">▶ Insert coin</span></button></div></div>
+<div class="cab-panel"><div class="cab-stick" aria-hidden="true"></div><div class="cab-btns"><button type="button" class="cab-btn" data-act="play" aria-pressed="false">▶ Play</button><button type="button" class="cab-btn" data-act="code" aria-pressed="false">&lt;/&gt; Code</button><button type="button" class="cab-btn" data-act="full">⛶ Full</button><a class="cab-btn" href="https://arcade.makecode.com/S32183-06852-86178-84168" target="_blank" rel="noopener">↗ MakeCode</a></div></div>
+<div class="cab-kick"><span class="cab-hint">Click the screen · Arrows + Z / X</span></div>
+</article>
+
+<article class="cabinet" data-id="S00996-87006-18257-54194" data-title="EGG-STRAVAGANZA!" data-mode="attract" style="--accent:#8ee08a;--glow:142,224,138">
+<header class="cab-marquee"><span class="cab-holiday">Easter</span><h4>EGG-STRAVAGANZA!</h4></header>
+<div class="cab-bezel"><div class="cab-screen"><button type="button" class="cab-attract" data-act="play" aria-label="Play EGG-STRAVAGANZA!"><span class="cab-glyph" aria-hidden="true">🥚</span><span class="cab-blurb">Gather eggs through 50 hedge mazes, dodge foxes, and race to the basket before time runs out.</span><span class="cab-insert">▶ Insert coin</span></button></div></div>
+<div class="cab-panel"><div class="cab-stick" aria-hidden="true"></div><div class="cab-btns"><button type="button" class="cab-btn" data-act="play" aria-pressed="false">▶ Play</button><button type="button" class="cab-btn" data-act="code" aria-pressed="false">&lt;/&gt; Code</button><button type="button" class="cab-btn" data-act="full">⛶ Full</button><a class="cab-btn" href="https://arcade.makecode.com/S00996-87006-18257-54194" target="_blank" rel="noopener">↗ MakeCode</a></div></div>
+<div class="cab-kick"><span class="cab-hint">Click the screen · Arrows + Z / X</span></div>
+</article>
+
+<article class="cabinet" data-id="S85929-21575-43378-29212" data-title="Freedom Flight: USA Tour Trivia" data-mode="attract" style="--accent:#ff4d5a;--glow:255,77,90">
+<header class="cab-marquee"><span class="cab-holiday">Independence Day</span><h4>Freedom Flight: USA Tour Trivia</h4></header>
+<div class="cab-bezel"><div class="cab-screen"><button type="button" class="cab-attract" data-act="play" aria-label="Play Freedom Flight: USA Tour Trivia"><span class="cab-glyph" aria-hidden="true">🦅</span><span class="cab-blurb">Fly a Bald Eagle across America, answering trivia at 40 famous landmarks to earn each next flight.</span><span class="cab-insert">▶ Insert coin</span></button></div></div>
+<div class="cab-panel"><div class="cab-stick" aria-hidden="true"></div><div class="cab-btns"><button type="button" class="cab-btn" data-act="play" aria-pressed="false">▶ Play</button><button type="button" class="cab-btn" data-act="code" aria-pressed="false">&lt;/&gt; Code</button><button type="button" class="cab-btn" data-act="full">⛶ Full</button><a class="cab-btn" href="https://arcade.makecode.com/S85929-21575-43378-29212" target="_blank" rel="noopener">↗ MakeCode</a></div></div>
+<div class="cab-kick"><span class="cab-hint">Click the screen · Arrows + Z / X</span></div>
+</article>
+
+</div>
+<p class="arcade-note">Games run live from Microsoft MakeCode Arcade, so only the cabinet you're playing is loaded. "Code" shows the game's source; "MakeCode" opens the full project in the editor in a new tab.</p>
+</article>
+</div></section>
 <section class="breaker grain"><div class="wrap"><small>What I Bring</small><h2>Visual <span>Versatility</span></h2></div></section>
-<section class="section"><div class="wrap"><div class="section-head"><div class="num">12</div><div><div class="eyebrow">Capabilities</div><h2>Creative <em>Toolbox</em></h2></div></div><div class="skills"><div class="skill"><div class="i">✦</div><div><h4>Brand Identity</h4><p>Logos, brand systems, collateral, visual direction.</p></div></div><div class="skill"><div class="i">▣</div><div><h4>Publishing</h4><p>Book covers, editorial layout, typography, print systems.</p></div></div><div class="skill"><div class="i">◎</div><div><h4>Marketing</h4><p>Campaigns, event graphics, social media, promotions.</p></div></div><div class="skill"><div class="i">⌁</div><div><h4>Illustration</h4><p>Character design, digital art, visual concepts.</p></div></div><div class="skill"><div class="i">▶</div><div><h4>Video Editing</h4><p>Short-form video, sequencing, pacing, audio, intros, outros, and multimedia editing.</p></div></div></div></div></section>
-<section class="contact grain"><div class="wrap"><div class="eyebrow">Let's Work Together</div><h2>Have an <span>Idea?</span></h2><div class="contact-row"><div>Angel Knadler · Graphic Designer</div><div><a href="mailto:angelknadler@gmail.com">angelknadler@gmail.com</a> · <a href="tel:+17179349566">717-934-9566</a></div></div></div></section><footer><div class="wrap">Angel Knadler · Graphic Design Portfolio · 2026</div></footer></body></html>
+<section class="section"><div class="wrap"><div class="section-head"><div class="num">13</div><div><div class="eyebrow">Capabilities</div><h2>Creative <em>Toolbox</em></h2></div></div><div class="skills"><div class="skill"><div class="i">✦</div><div><h4>Brand Identity</h4><p>Logos, brand systems, collateral, visual direction.</p></div></div><div class="skill"><div class="i">▣</div><div><h4>Publishing</h4><p>Book covers, editorial layout, typography, print systems.</p></div></div><div class="skill"><div class="i">◎</div><div><h4>Marketing</h4><p>Campaigns, event graphics, social media, promotions.</p></div></div><div class="skill"><div class="i">⌁</div><div><h4>Illustration</h4><p>Character design, digital art, visual concepts.</p></div></div><div class="skill"><div class="i">▶</div><div><h4>Video Editing</h4><p>Short-form video, sequencing, pacing, audio, intros, outros, and multimedia editing.</p></div></div></div></div></section>
+<section class="contact grain"><div class="wrap"><div class="eyebrow">Let's Work Together</div><h2>Have an <span>Idea?</span></h2><div class="contact-row"><div>Angel Knadler · Graphic Designer</div><div><a href="mailto:angelknadler@gmail.com">angelknadler@gmail.com</a> · <a href="tel:+17179349566">717-934-9566</a></div></div></div></section><footer><div class="wrap">Angel Knadler · Graphic Design Portfolio · 2026</div></footer>
+<script>
+(function(){
+  var BASE='https://arcade.makecode.com/';
+  var cabs=[].slice.call(document.querySelectorAll('.cabinet'));
+  if(!cabs.length) return;
+  var fsOk=!!(document.fullscreenEnabled||document.webkitFullscreenEnabled);
+  if(!fsOk){[].forEach.call(document.querySelectorAll('.cab-btn[data-act="full"]'),function(b){b.hidden=true;});}
+
+  function setMode(cab,mode){
+    var id=cab.getAttribute('data-id'),title=cab.getAttribute('data-title');
+    var screen=cab.querySelector('.cab-screen');
+    var old=screen.querySelector('iframe');
+    if(old){old.remove();}
+    cab.setAttribute('data-mode',mode);
+    [].forEach.call(cab.querySelectorAll('.cab-btn[data-act="play"],.cab-btn[data-act="code"]'),function(b){
+      b.setAttribute('aria-pressed',String(b.getAttribute('data-act')===mode));
+    });
+    if(mode==='attract') return;
+    cabs.forEach(function(o){ if(o!==cab && o.getAttribute('data-mode')!=='attract'){ setMode(o,'attract'); } });
+    var f=document.createElement('iframe');
+    f.title=(mode==='play'?'Play ':'Source code for ')+title;
+    f.src=(mode==='play')?(BASE+'---run?id='+id):(BASE+'---codeembed#pub:'+id);
+    f.setAttribute('allow','autoplay; fullscreen; gamepad');
+    f.setAttribute('allowfullscreen','');
+    f.setAttribute('sandbox','allow-popups allow-forms allow-scripts allow-same-origin');
+    f.addEventListener('load',function(){ try{f.focus();}catch(e){} });
+    screen.appendChild(f);
+  }
+
+  document.addEventListener('click',function(e){
+    var el=e.target.closest?e.target.closest('[data-act]'):null;
+    if(!el) return;
+    var cab=el.closest('.cabinet'); if(!cab) return;
+    var act=el.getAttribute('data-act');
+    if(act==='play'||act==='code'){ setMode(cab,act); return; }
+    if(act==='full'){
+      var screen=cab.querySelector('.cab-screen');
+      if(cab.getAttribute('data-mode')==='attract'){ setMode(cab,'play'); }
+      var req=screen.requestFullscreen||screen.webkitRequestFullscreen;
+      if(req){ try{ req.call(screen); }catch(err){} }
+    }
+  });
+})();
+</script>
+</body></html>
